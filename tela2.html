@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro do Usuário</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-section cadastro">
+      <button id="voltarBtn">voltar</button>
+      <h2>Cadastro do Usuário</h2>
+      <form id="cadastroForm" enctype="multipart/form-data">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" required />
+
+        <label for="dataNascimento">Data de nascimento:</label>
+        <input type="date" id="dataNascimento" placeholder="dd/mm/aaaa" required />
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" required />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" required />
+
+        <label for="areaInteresse">Área de interesse:</label>
+        <select id="areaInteresse" required>
+          <option value="" disabled selected>Selecione uma área</option>
+          <option value="front-end">Front-end</option>
+          <option value="back-end">Back-end</option>
+          <option value="design">Design</option>
+          <option value="desenvolvimento-jogos">Desenvolvimento de Jogos</option>
+          <option value="ciencia-dados">Ciência de Dados</option>
+        </select>
+
+        <label for="formacao">Formação acadêmica:</label>
+        <select id="formacao" required>
+          <option value="" disabled selected>Selecione uma formação</option>
+          <option value="ensino-medio-incompleto">Ensino Médio Incompleto</option>
+          <option value="ensino-medio-completo">Ensino Médio Completo</option>
+          <option value="curso-superior-incompleto">Curso Superior Incompleto</option>
+          <option value="curso-superior-completo">Curso Superior Completo</option>
+        </select>
+
+        <label for="experiencia">Experiência profissional:</label>
+        <textarea id="experiencia" required></textarea>
+
+        <label for="disponibilidade">Disponibilidade de horário *</label>
+        <select id="disponibilidade" required>
+          <option value="">Selecione</option>
+          <option value="Manhã">Manhã</option>
+          <option value="Tarde">Tarde</option>
+          <option value="Noite">Noite</option>
+        </select>
+
+        <label for="sobre">Conte mais sobre você (opcional):</label>
+        <textarea id="sobre" name="sobre" placeholder="Digite algo se quiser..."></textarea>
+
+        <label for="documentos">Upload de documentos:</label>
+        <input type="file" id="documentos" required />
+
+        <button type="submit">Finalizar Inscrição</button>
+      </form>
+    </div>
+
+    <div class="logo-section">
+      <img src="assets/inovaMaranhao.avif" alt="Inova Maranhão" class="logo">
+      <img src="assets/governoMaranhao.png" alt="Governo do Maranhão" class="logo">
+      <img src="assets/trilhas logo.webp" alt="Trilhas" class="logo">
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
